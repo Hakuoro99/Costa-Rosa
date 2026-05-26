@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ShoppingBag, Leaf } from 'lucide-react';
 
+import logo from '../assets/logo.jpg';
+
 export default function Navbar({ onCartClick }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,7 +44,7 @@ export default function Navbar({ onCartClick }) {
           {/* Logo Brand */}
           <a href="#inicio" className="flex items-center group">
             <img
-              src="/logo.jpg"
+              src={logo}
               alt="Logo Costa Rosa"
               className="h-12 w-auto object-contain rounded-xl shadow-sm border border-brand-dark/5 hover:scale-105 transition-transform duration-300"
             />

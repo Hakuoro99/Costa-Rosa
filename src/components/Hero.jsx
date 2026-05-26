@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Leaf, ArrowRight, Sparkles } from 'lucide-react';
 
+import heroPitaya from '../assets/hero_pitaya.png';
+
 export default function Hero() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -145,7 +147,7 @@ export default function Hero() {
           {/* Premium Image Container */}
           <div className="relative max-w-md md:max-w-lg w-full aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white transform hover:rotate-2 transition-transform duration-500 bg-brand-soft-rose/5">
             <img
-              src="/hero_pitaya.png"
+              src={heroPitaya}
               alt="Pitahaya fresca cortada gourmet Costa Rosa"
               className="w-full h-full object-cover"
               loading="eager"

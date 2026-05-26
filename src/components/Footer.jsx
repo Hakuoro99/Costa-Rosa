@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Leaf, Mail, MapPin, MessageCircle, Send, Check } from 'lucide-react';
 
+import logo from '../assets/logo.jpg';
+
 const Instagram = ({ size = 20, className = "" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +74,7 @@ export default function Footer() {
         <div className="md:col-span-1 text-left">
           <div className="flex items-center mb-6 group">
             <img
-              src="/logo.jpg"
+              src={logo}
               alt="Logo Costa Rosa"
               className="h-16 w-auto object-contain rounded-xl shadow-md border border-white/10 hover:scale-105 transition-transform duration-300"
             />

@@ -2,6 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Heart } from 'lucide-react';
 
+// Static asset imports
+import heroPitaya from '../assets/hero_pitaya.png';
+import nievePitaya from '../assets/nieve_pitaya.png';
+import chamoyPitaya from '../assets/chamoy_pitaya.png';
+import essenceMexican from '../assets/essence_mexican.png';
+import chilePitaya from '../assets/chile_pitaya.png';
+import snacksPitaya from '../assets/snacks_pitaya.png';
+
 const Instagram = ({ size = 20, className = "" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -23,37 +31,37 @@ const Instagram = ({ size = 20, className = "" }) => (
 
 const galleryItems = [
   {
-    image: '/hero_pitaya.png',
+    image: heroPitaya,
     title: 'Frescura Silvestre',
     size: 'col-span-1 row-span-2',
     aspect: 'aspect-[9/16]',
   },
   {
-    image: '/nieve_pitaya.png',
+    image: nievePitaya,
     title: 'Nieve Cremosa',
     size: 'col-span-1 row-span-1',
     aspect: 'aspect-square',
   },
   {
-    image: '/chamoy_pitaya.png',
+    image: chamoyPitaya,
     title: 'Chamoy Gourmet',
     size: 'col-span-1 row-span-1',
     aspect: 'aspect-square',
   },
   {
-    image: '/essence_mexican.png',
+    image: essenceMexican,
     title: 'Manos Artesanas',
     size: 'col-span-2 row-span-1',
     aspect: 'aspect-[16/9]',
   },
   {
-    image: '/chile_pitaya.png',
+    image: chilePitaya,
     title: 'Toque de Picor',
     size: 'col-span-1 row-span-1',
     aspect: 'aspect-square',
   },
   {
-    image: '/snacks_pitaya.png',
+    image: snacksPitaya,
     title: 'Chips Crujientes',
     size: 'col-span-1 row-span-1',
     aspect: 'aspect-square',

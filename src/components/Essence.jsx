@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Compass, Leaf, Heart, Sun, Award } from 'lucide-react';
 
+import essenceMexican from '../assets/essence_mexican.png';
+
 export default function Essence() {
   const values = [
     {
@@ -102,7 +104,7 @@ export default function Essence() {
 
             <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white transform hover:-rotate-1 transition-transform duration-500 bg-brand-rose/5">
               <img
-                src="/essence_mexican.png"
+                src={essenceMexican}
                 alt="Manos cortando pitahayas orgánicas de forma artesanal en México"
                 className="w-full h-full object-cover"
                 loading="lazy"

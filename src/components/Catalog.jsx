@@ -2,11 +2,17 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingCart, Star, X, Check, Eye, Plus, Minus, Leaf } from 'lucide-react';
 
+// Static asset imports
+import nievePitaya from '../assets/nieve_pitaya.png';
+import chamoyPitaya from '../assets/chamoy_pitaya.png';
+import chilePitaya from '../assets/chile_pitaya.png';
+import heroPitaya from '../assets/hero_pitaya.png';
+
 const products = [
   {
     id: 1,
     name: 'Nieve Artesanal de Pitahaya',
-    image: '/nieve_pitaya.png',
+    image: nievePitaya,
     category: 'Nieves',
     description: 'Nieve gourmet cremosa elaborada a mano con pulpa natural de pitahaya rosa y un toque de limón fresco.',
     price: 30.0,
@@ -24,7 +30,7 @@ const products = [
   {
     id: 2,
     name: 'Chamoy de Pitahaya Natural',
-    image: '/chamoy_pitaya.png',
+    image: chamoyPitaya,
     category: 'Salsas',
     description: 'Chamoy premium artesanal endulzado de forma natural, combinando chiles secos selectos y el dulzor de la pitahaya.',
     price: 50.0,
@@ -37,7 +43,7 @@ const products = [
   {
     id: 3,
     name: 'Chile con Pitahaya Gourmet',
-    image: '/chile_pitaya.png',
+    image: chilePitaya,
     category: 'Sazonadores',
     description: 'Mezcla única de chiles secos molidos con pitahaya liofilizada. El balance perfecto entre picor y acidez tropical.',
     price: 30.0,
@@ -50,7 +56,7 @@ const products = [
   {
     id: 4,
     name: 'Pitahayas Orgánicas Frescas',
-    image: '/hero_pitaya.png',
+    image: heroPitaya,
     category: 'Cosecha',
     description: 'Cesta de pitahayas (dragonfruit) frescas orgánicas recién recolectadas de nuestros huertos. Exquisitez jugosa llena de hidratación.',
     price: 80.0,
