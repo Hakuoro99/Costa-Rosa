@@ -84,7 +84,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-4">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/costarosa.mzo"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-full bg-white/5 hover:bg-brand-rose hover:text-white transition-all duration-300 border border-white/10"

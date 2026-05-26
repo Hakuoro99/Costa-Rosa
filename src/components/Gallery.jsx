@@ -137,7 +137,7 @@ export default function Gallery() {
           className="text-center mt-12"
         >
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/costarosa.mzo"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 px-8 py-3.5 bg-brand-dark hover:bg-brand-rose text-white font-sans font-semibold rounded-full shadow-lg transition-colors duration-300"
