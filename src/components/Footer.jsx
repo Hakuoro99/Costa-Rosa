@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Leaf, Mail, MapPin, MessageCircle, Send, Check } from 'lucide-react';
+import { Leaf, MapPin, MessageCircle, Send, Check } from 'lucide-react';
 
 import logo from '../assets/logo.jpg';
 
@@ -36,6 +36,23 @@ const Facebook = ({ size = 20, className = "" }) => (
     className={className}
   >
     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  </svg>
+);
+
+const Tiktok = ({ size = 20, className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
   </svg>
 );
 
@@ -93,13 +110,22 @@ export default function Footer() {
               <Instagram size={18} />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/share/1CGjUTTAtF/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-full bg-white/5 hover:bg-brand-rose hover:text-white transition-all duration-300 border border-white/10"
               aria-label="Facebook"
             >
               <Facebook size={18} />
+            </a>
+            <a
+              href="https://www.tiktok.com/@costarosa.mzo?_r=1&_t=ZS-96sdQ1hKQyq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2.5 rounded-full bg-white/5 hover:bg-brand-rose hover:text-white transition-all duration-300 border border-white/10"
+              aria-label="TikTok"
+            >
+              <Tiktok size={18} />
             </a>
           </div>
         </div>
@@ -135,9 +161,14 @@ export default function Footer() {
               <span>Cualata, Félix Díaz #5 Manzanillo Colima</span>
             </li>
             <li className="flex gap-3 items-center">
-              <Mail size={18} className="text-brand-green shrink-0" />
-              <a href="mailto:hola@costarosa.mx" className="hover:text-brand-green transition-colors">
-                hola@costarosa.mx
+              <Facebook size={18} className="text-brand-green shrink-0" />
+              <a
+                href="https://www.facebook.com/share/1CGjUTTAtF/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-brand-green transition-colors"
+              >
+                Facebook
               </a>
             </li>
             <li className="flex gap-3 items-center">
